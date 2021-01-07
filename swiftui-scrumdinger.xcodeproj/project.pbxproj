@@ -71,15 +71,15 @@
 		DE9637A525A72F72009A48E1 /* swiftui-scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
-				DE42939525A73EB200BD3CED /* CardView.swift */,
 				DE42938925A73CD000BD3CED /* Models */,
 				DE9637A625A72F72009A48E1 /* swiftui_scrumdingerApp.swift */,
 				DE9637A825A72F72009A48E1 /* MeetingView.swift */,
+				DE42939525A73EB200BD3CED /* CardView.swift */,
+				DE42939925A7440A00BD3CED /* ScrumsView.swift */,
 				DE9637AA25A72F73009A48E1 /* Assets.xcassets */,
 				DE9637AF25A72F73009A48E1 /* Info.plist */,
 				DE9637B625A72FB6009A48E1 /* .gitignore */,
 				DE9637AC25A72F73009A48E1 /* Preview Content */,
-				DE42939925A7440A00BD3CED /* ScrumsView.swift */,
 			);
 			path = "swiftui-scrumdinger";
 			sourceTree = "<group>";
