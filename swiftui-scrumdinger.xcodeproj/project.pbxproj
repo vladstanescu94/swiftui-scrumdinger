@@ -11,6 +11,8 @@
 		DE02EAF925A8577800D5AB19 /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02EAF825A8577800D5AB19 /* ScrumProgressViewStyle.swift */; };
 		DE02EAFD25A858C200D5AB19 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02EAFC25A858C200D5AB19 /* ScrumTimer.swift */; };
 		DE02EB0F25A862D700D5AB19 /* MeetingFooterVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02EB0E25A862D700D5AB19 /* MeetingFooterVIew.swift */; };
+		DE0495AD25A875CC00E8EAD8 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0495AC25A875CC00E8EAD8 /* AVPlayer+Ding.swift */; };
+		DE0495B125A8762A00E8EAD8 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = DE0495B025A8762900E8EAD8 /* ding.wav */; };
 		DE42938C25A73CE800BD3CED /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE42938B25A73CE800BD3CED /* DailyScrum.swift */; };
 		DE42938F25A73D5900BD3CED /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE42938E25A73D5900BD3CED /* Color+Codable.swift */; };
 		DE42939625A73EB200BD3CED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE42939525A73EB200BD3CED /* CardView.swift */; };
@@ -29,6 +31,8 @@
 		DE02EAF825A8577800D5AB19 /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		DE02EAFC25A858C200D5AB19 /* ScrumTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		DE02EB0E25A862D700D5AB19 /* MeetingFooterVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterVIew.swift; sourceTree = "<group>"; };
+		DE0495AC25A875CC00E8EAD8 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
+		DE0495B025A8762900E8EAD8 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		DE42938B25A73CE800BD3CED /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		DE42938E25A73D5900BD3CED /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		DE42939525A73EB200BD3CED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "swiftui-scrumdinger/Features/Scrums/Views/CardView.swift"; sourceTree = SOURCE_ROOT; };
@@ -128,9 +132,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DE0495AF25A8762900E8EAD8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE0495B025A8762900E8EAD8 /* ding.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DE42938925A73CD000BD3CED /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DE0495AC25A875CC00E8EAD8 /* AVPlayer+Ding.swift */,
 				DE42938E25A73D5900BD3CED /* Color+Codable.swift */,
 			);
 			path = Extensions;
@@ -158,6 +171,7 @@
 				DE02EB0525A861C900D5AB19 /* Features */,
 				DE42938925A73CD000BD3CED /* Extensions */,
 				DE9637A625A72F72009A48E1 /* swiftui_scrumdingerApp.swift */,
+				DE0495AF25A8762900E8EAD8 /* Resources */,
 				DE9637AA25A72F73009A48E1 /* Assets.xcassets */,
 				DE9637AF25A72F73009A48E1 /* Info.plist */,
 				DE9637B625A72FB6009A48E1 /* .gitignore */,
@@ -233,6 +247,7 @@
 			files = (
 				DE9637AE25A72F73009A48E1 /* Preview Assets.xcassets in Resources */,
 				DE9637B725A72FB7009A48E1 /* .gitignore in Resources */,
+				DE0495B125A8762A00E8EAD8 /* ding.wav in Resources */,
 				DE9637AB25A72F73009A48E1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +262,7 @@
 				DE9637A925A72F72009A48E1 /* MeetingView.swift in Sources */,
 				DE42939A25A7440A00BD3CED /* ScrumsView.swift in Sources */,
 				DE4293A225A7518300BD3CED /* EditView.swift in Sources */,
+				DE0495AD25A875CC00E8EAD8 /* AVPlayer+Ding.swift in Sources */,
 				DE02EAF625A854B400D5AB19 /* MeetingHeaderView.swift in Sources */,
 				DE42938C25A73CE800BD3CED /* DailyScrum.swift in Sources */,
 				DE42939E25A7480E00BD3CED /* DetailView.swift in Sources */,
