@@ -19,14 +19,7 @@ struct MeetingView: View {
                 MeetingHeaderView(secondsElapsed: $scrumTimer.secondsElapsed, secondsRemaining: $scrumTimer.secondsRemaining, scrumColor: scrum.color)
                 Circle()
                     .strokeBorder(lineWidth: 24, antialiased: true)
-                HStack {
-                    Text("Speaker 1 of 3")
-                    Spacer()
-                    Button(action: {}, label: {
-                        Image(systemName: "forward.fill")
-                    })
-                    .accessibilityLabel(Text("Next speaker"))
-                }
+                MeetingFooterVIew(speakers: $scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
             .padding()
         }
