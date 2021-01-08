@@ -29,7 +29,7 @@
 		DE02EAFC25A858C200D5AB19 /* ScrumTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		DE42938B25A73CE800BD3CED /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		DE42938E25A73D5900BD3CED /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
-		DE42939525A73EB200BD3CED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "swiftui-scrumdinger/Views/CardView.swift"; sourceTree = SOURCE_ROOT; };
+		DE42939525A73EB200BD3CED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "swiftui-scrumdinger/Features/Scrums/Views/CardView.swift"; sourceTree = SOURCE_ROOT; };
 		DE42939925A7440A00BD3CED /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		DE42939D25A7480E00BD3CED /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DE4293A125A7518300BD3CED /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
@@ -53,28 +53,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE02EB0225A8614300D5AB19 /* Views */ = {
+		DE02EB0525A861C900D5AB19 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				DE9637A825A72F72009A48E1 /* MeetingView.swift */,
+				DE02EB0625A861CF00D5AB19 /* Scrums */,
+				DE02EB0825A861E000D5AB19 /* Detail */,
+				DE02EB0725A861D700D5AB19 /* Meeting */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		DE02EB0625A861CF00D5AB19 /* Scrums */ = {
+			isa = PBXGroup;
+			children = (
+				DE02EB0A25A861F400D5AB19 /* Models */,
+				DE02EB0925A861ED00D5AB19 /* Views */,
+			);
+			path = Scrums;
+			sourceTree = "<group>";
+		};
+		DE02EB0725A861D700D5AB19 /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				DE02EB0B25A8620E00D5AB19 /* Views */,
+			);
+			path = Meeting;
+			sourceTree = "<group>";
+		};
+		DE02EB0825A861E000D5AB19 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DE02EB0C25A8622C00D5AB19 /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DE02EB0925A861ED00D5AB19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				DE42939925A7440A00BD3CED /* ScrumsView.swift */,
 				DE42939525A73EB200BD3CED /* CardView.swift */,
-				DE4293A125A7518300BD3CED /* EditView.swift */,
-				DE42939D25A7480E00BD3CED /* DetailView.swift */,
-				DE02EAF525A854B400D5AB19 /* MeetingHeaderView.swift */,
 				DE02EAF825A8577800D5AB19 /* ScrumProgressViewStyle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		DE42938925A73CD000BD3CED /* Models */ = {
+		DE02EB0A25A861F400D5AB19 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				DE02EAFC25A858C200D5AB19 /* ScrumTimer.swift */,
 				DE42938B25A73CE800BD3CED /* DailyScrum.swift */,
-				DE42938E25A73D5900BD3CED /* Color+Codable.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DE02EB0B25A8620E00D5AB19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE9637A825A72F72009A48E1 /* MeetingView.swift */,
+				DE02EAF525A854B400D5AB19 /* MeetingHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE02EB0C25A8622C00D5AB19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE42939D25A7480E00BD3CED /* DetailView.swift */,
+				DE4293A125A7518300BD3CED /* EditView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE42938925A73CD000BD3CED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE42938E25A73D5900BD3CED /* Color+Codable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DE96379A25A72F72009A48E1 = {
@@ -96,8 +152,8 @@
 		DE9637A525A72F72009A48E1 /* swiftui-scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
-				DE02EB0225A8614300D5AB19 /* Views */,
-				DE42938925A73CD000BD3CED /* Models */,
+				DE02EB0525A861C900D5AB19 /* Features */,
+				DE42938925A73CD000BD3CED /* Extensions */,
 				DE9637A625A72F72009A48E1 /* swiftui_scrumdingerApp.swift */,
 				DE9637AA25A72F73009A48E1 /* Assets.xcassets */,
 				DE9637AF25A72F73009A48E1 /* Info.plist */,
