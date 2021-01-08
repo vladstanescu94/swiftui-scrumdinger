@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE02EAF625A854B400D5AB19 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02EAF525A854B400D5AB19 /* MeetingHeaderView.swift */; };
+		DE02EAF925A8577800D5AB19 /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE02EAF825A8577800D5AB19 /* ScrumProgressViewStyle.swift */; };
 		DE42938C25A73CE800BD3CED /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE42938B25A73CE800BD3CED /* DailyScrum.swift */; };
 		DE42938F25A73D5900BD3CED /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE42938E25A73D5900BD3CED /* Color+Codable.swift */; };
 		DE42939625A73EB200BD3CED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE42939525A73EB200BD3CED /* CardView.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		DE02EAF525A854B400D5AB19 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
+		DE02EAF825A8577800D5AB19 /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		DE42938B25A73CE800BD3CED /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		DE42938E25A73D5900BD3CED /* Color+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		DE42939525A73EB200BD3CED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = SOURCE_ROOT; };
@@ -84,11 +86,12 @@
 				DE4293A125A7518300BD3CED /* EditView.swift */,
 				DE42939925A7440A00BD3CED /* ScrumsView.swift */,
 				DE42939D25A7480E00BD3CED /* DetailView.swift */,
+				DE02EAF825A8577800D5AB19 /* ScrumProgressViewStyle.swift */,
+				DE02EAF525A854B400D5AB19 /* MeetingHeaderView.swift */,
 				DE9637AA25A72F73009A48E1 /* Assets.xcassets */,
 				DE9637AF25A72F73009A48E1 /* Info.plist */,
 				DE9637B625A72FB6009A48E1 /* .gitignore */,
 				DE9637AC25A72F73009A48E1 /* Preview Content */,
-				DE02EAF525A854B400D5AB19 /* MeetingHeaderView.swift */,
 			);
 			path = "swiftui-scrumdinger";
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				DE42939E25A7480E00BD3CED /* DetailView.swift in Sources */,
 				DE42938F25A73D5900BD3CED /* Color+Codable.swift in Sources */,
 				DE9637A725A72F72009A48E1 /* swiftui_scrumdingerApp.swift in Sources */,
+				DE02EAF925A8577800D5AB19 /* ScrumProgressViewStyle.swift in Sources */,
 				DE42939625A73EB200BD3CED /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
