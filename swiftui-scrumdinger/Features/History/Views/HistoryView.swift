@@ -9,16 +9,22 @@ import SwiftUI
 
 struct HistoryView: View {
     let history: History
+    
+    // MARK: - Localized Strings
+    private let attendeesTitle: LocalizedStringKey = "attendeesLabel"
+    private let transcriptTitle: LocalizedStringKey = "transcriptLabel"
+
+    // MARK: - View Body
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
                 Divider()
                     .padding(.bottom)
-                Text("Attendees")
+                Text(attendeesTitle)
                     .font(.headline)
                 Text(history.attendeeString)
                 if let transcript = history.transcript {
-                    Text("Transcript")
+                    Text(transcriptTitle)
                         .font(.headline)
                         .padding(.top)
                     Text(transcript)

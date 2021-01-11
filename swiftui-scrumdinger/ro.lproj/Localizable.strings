@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  swiftui-scrumdinger
+
+  Created by Vlad Stanescu on 11.01.2021.
+  
+*/
+"homeTitle" = "Intâlnirile de azi";
+"dismissButton" = "Anulare";
+"addButton" = "Adauga";
+"meetingInfo" = "Informatii intalnire";
+"meetingStart" = "Incepe intalnirea";
+"lengthLabel" = "Durata";
+"colorLabel" = "Culoare";
+"attendeesLabel" = "Participanti";
+"historyLabel" = "Istoric";
+"editLabel" = "Editare";
+"cancelLabel" = "Anulare";
+"doneLabel" = "Gata";
+
+"%lld minutes" = "%lld minute";
+"scrumTitleLabel" = "Titlu";
+"newAttendeeLabel" = "Participant nou";
+
+"transcriptLabel" = "Transcriere";
+
+"secondsElapsed" = "Secunde Trecute";
+"secondsRemaining" = "Secunde Ramase";
+
+"lastSpeaker" = "Ultimul vorbitor";
+
+"speakingLabel" = "vorbeste";

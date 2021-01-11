@@ -12,23 +12,36 @@ struct DetailView: View {
     @State private var data: DailyScrum.Data = DailyScrum.Data()
     @State private var isPresented = false
     
+    // MARK: - Localized Strings
+    private let headerText: LocalizedStringKey = "meetingInfo"
+    private let startMeetingLabel: LocalizedStringKey = "meetingStart"
+    private let lengthLabel: LocalizedStringKey = "lengthLabel"
+    private let colorLabel: LocalizedStringKey = "colorLabel"
+    private let attendeesTitle: LocalizedStringKey = "attendeesLabel"
+    private let historyTitle: LocalizedStringKey = "historyLabel"
+    private let editButtonLabel: LocalizedStringKey = "editLabel"
+    private let cancelButtonLabel: LocalizedStringKey = "cancelLabel"
+    private let doneButtonLabel: LocalizedStringKey = "doneLabel"
+
+    // MARK: - View Body
+    
     var body: some View {
         List {
-            Section(header: Text("Meeting Info")) {
+            Section(header: Text(headerText)) {
                 NavigationLink(destination: MeetingView(scrum: $scrum)) {
-                    Label("Start Meeting", systemImage: "timer")
+                    Label(startMeetingLabel, systemImage: "timer")
                         .font(.headline)
                         .foregroundColor(.accentColor)
                         .accessibilityLabel(Text("Start meeting"))
                 }
                 HStack {
-                    Label("Length", systemImage: "clock")
+                    Label(lengthLabel, systemImage: "clock")
                         .accessibilityLabel(Text("Meeting length"))
                     Spacer()
                     Text("\(scrum.lengthInMinutes) minutes")
                 }
                 HStack {
-                    Label("Color", systemImage: "paintpalette")
+                    Label(colorLabel, systemImage: "paintpalette")
                         .accessibilityLabel(Text("Meeting length"))
                     Spacer()
                     Image(systemName: "checkmark.circle.fill")
@@ -36,14 +49,14 @@ struct DetailView: View {
                 }
                 .accessibilityElement(children: .ignore)
             }
-            Section(header: Text("Attendees")) {
+            Section(header: Text(attendeesTitle)) {
                 ForEach(scrum.attendees, id: \.self) { attendee in
                     Label(attendee, systemImage: "person")
                         .accessibilityLabel(Text("Person"))
                         .accessibilityValue(Text(attendee))
                 }
             }
-            Section(header: Text("History")) {
+            Section(header: Text(historyTitle)) {
                 if scrum.history.isEmpty {
                     Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
                 }
@@ -59,7 +72,7 @@ struct DetailView: View {
         }
         .listStyle(InsetGroupedListStyle())
         .navigationTitle(scrum.title)
-        .navigationBarItems(trailing: Button("Edit") {
+        .navigationBarItems(trailing: Button(editButtonLabel) {
             isPresented = true
             data = scrum.data
         })
@@ -67,9 +80,9 @@ struct DetailView: View {
             NavigationView {
                 EditView(scrumData: $data)
                     .navigationTitle(scrum.title)
-                    .navigationBarItems(leading: Button("Cancel") {
+                    .navigationBarItems(leading: Button(cancelButtonLabel) {
                         isPresented = false
-                    }, trailing: Button("Done") {
+                    }, trailing: Button(doneButtonLabel) {
                         isPresented = false
                         scrum.update(from: data)
                     })

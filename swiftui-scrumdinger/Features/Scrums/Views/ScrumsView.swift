@@ -14,6 +14,13 @@ struct ScrumsView: View {
     @State private var newScrumData = DailyScrum.Data()
     let saveAction: () -> Void
     
+    // MARK: - Localized Strings
+    private let homeTitle: LocalizedStringKey = "homeTitle"
+    private let dismissButtonText: LocalizedStringKey = "dismissButton"
+    private let addButtonText: LocalizedStringKey = "addButton"
+
+    //MARK: - View Body
+    
     var body: some View {
         List {
             ForEach(scrums) { scrum in
@@ -27,7 +34,7 @@ struct ScrumsView: View {
                 scrums.remove(atOffsets: indexSet)
             })
         }
-        .navigationTitle("Daily Scrums")
+        .navigationTitle(homeTitle)
         .navigationBarItems(trailing: Button(action: {
             isPresented = true
         }, label: {
@@ -36,9 +43,9 @@ struct ScrumsView: View {
         .sheet(isPresented: $isPresented) {
             NavigationView {
                 EditView(scrumData: $newScrumData)
-                    .navigationBarItems(leading: Button("Dismiss") {
+                    .navigationBarItems(leading: Button(dismissButtonText) {
                         isPresented = false
-                    }, trailing: Button("Add") {
+                    }, trailing: Button(addButtonText) {
                         let newScrum = DailyScrum(title: newScrumData.title, attendees: newScrumData.attendees, lengthInMinutes: Int(newScrumData.lengthInMinutes), color: newScrumData.color)
                         scrums.append(newScrum)
                         isPresented = false

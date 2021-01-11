@@ -41,6 +41,9 @@ struct MeetingTimerView: View {
         speakers.first(where: { !$0.isCompleted })?.name ?? "Someone"
     }
     
+    // MARK: - Localized Strings
+    private let isSpeakingLabel: LocalizedStringKey = "speakingLabel"
+    
     var body: some View {
         ZStack {
             Circle()
@@ -48,7 +51,7 @@ struct MeetingTimerView: View {
             VStack {
                 Text(currentSpeaker)
                     .font(.title)
-                Text("is speaking")
+                Text(isSpeakingLabel)
                 Image(systemName: isRecording ? "mic" : "mic.slash")
                     .font(.title)
                     .padding(.top)

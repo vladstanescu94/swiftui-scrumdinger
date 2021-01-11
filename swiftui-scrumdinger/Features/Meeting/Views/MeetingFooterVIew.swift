@@ -23,11 +23,14 @@ struct MeetingFooterVIew: View {
         return "Speaker \(speakerNumber) of \(speakers.count)"
     }
     
+    // MARK: - Localized Strings
+    private let lastSpeakerText: LocalizedStringKey = "lastSpeaker"
+    
     var body: some View {
         VStack {
             HStack {
                 if isLastSpeaker {
-                    Text("Last speaker")
+                    Text(lastSpeakerText)
                 } else {
                     Text(speakerText)
                     Spacer()

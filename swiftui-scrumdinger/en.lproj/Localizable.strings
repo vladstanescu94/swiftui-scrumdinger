@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  swiftui-scrumdinger
+
+  Created by Vlad Stanescu on 11.01.2021.
+  
+*/
+"homeTitle" = "Daily Scrums";
+"dismissButton" = "Dismiss";
+"addButton" = "Add";
+"meetingInfo" = "Meeting Info";
+"meetingStart" = "Start meeting";
+"lengthLabel" = "Length";
+"colorLabel" = "Color";
+"attendeesLabel" = "Attendees";
+"historyLabel" = "History";
+"editLabel" = "Edit";
+"cancelLabel" = "Cancel";
+"doneLabel" = "Done";
+
+"%lld minutes" = "%lld minutes";
+"scrumTitleLabel" = "Title";
+"newAttendeeLabel" = "New attendee";
+
+"transcriptLabel" = "Transcript";
+
+"secondsElapsed" = "Seconds Elapsed";
+"secondsRemaining" = "Seconds Remaining";
+
+"lastSpeaker" = "Last Speaker";
+
+"speakingLabel" = "is speaking";

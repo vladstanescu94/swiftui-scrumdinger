@@ -28,6 +28,11 @@ struct MeetingHeaderView: View {
         minutesRemaining == 1 ? "minute" : "minutes"
     }
     
+    // MARK: - Localized Strings
+    private let secondsElapsedText: LocalizedStringKey = "secondsElapsed"
+    private let secondsRemainingText: LocalizedStringKey = "secondsRemaining"
+
+    
     // MARK: - View
     
     var body: some View {
@@ -36,13 +41,13 @@ struct MeetingHeaderView: View {
                 .progressViewStyle(ScrumProgressViewStyle(scrumColor: scrumColor))
             HStack {
                 VStack(alignment: .leading) {
-                    Text("Seconds Elapsed")
+                    Text(secondsElapsedText)
                         .font(.caption)
                     Label("\(secondsElapsed)", systemImage: "hourglass.bottomhalf.fill")
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
-                    Text("Seconds Remaining")
+                    Text(secondsRemainingText)
                         .font(.caption)
                     HStack {
                         Text("\(secondsRemaining)")

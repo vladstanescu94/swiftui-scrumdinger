@@ -24,6 +24,7 @@
 		DE4293A225A7518300BD3CED /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4293A125A7518300BD3CED /* EditView.swift */; };
 		DE88B22A25AC546A00EEE4AB /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88B22925AC546A00EEE4AB /* SpeechRecognizer.swift */; };
 		DE88B23025AC778700EEE4AB /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88B22F25AC778700EEE4AB /* HistoryView.swift */; };
+		DE88B23725AC81D000EEE4AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE88B23925AC81D000EEE4AB /* Localizable.strings */; };
 		DE9637A725A72F72009A48E1 /* swiftui_scrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9637A625A72F72009A48E1 /* swiftui_scrumdingerApp.swift */; };
 		DE9637A925A72F72009A48E1 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9637A825A72F72009A48E1 /* MeetingView.swift */; };
 		DE9637AB25A72F73009A48E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE9637AA25A72F73009A48E1 /* Assets.xcassets */; };
@@ -49,6 +50,8 @@
 		DE4293A125A7518300BD3CED /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		DE88B22925AC546A00EEE4AB /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		DE88B22F25AC778700EEE4AB /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		DE88B23825AC81D000EEE4AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DE88B23B25AC81D100EEE4AB /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DE9637A325A72F72009A48E1 /* swiftui-scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-scrumdinger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9637A625A72F72009A48E1 /* swiftui_scrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_scrumdingerApp.swift; sourceTree = "<group>"; };
 		DE9637A825A72F72009A48E1 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -223,6 +226,7 @@
 				DE9637AF25A72F73009A48E1 /* Info.plist */,
 				DE9637B625A72FB6009A48E1 /* .gitignore */,
 				DE9637AC25A72F73009A48E1 /* Preview Content */,
+				DE88B23925AC81D000EEE4AB /* Localizable.strings */,
 			);
 			path = "swiftui-scrumdinger";
 			sourceTree = "<group>";
@@ -276,6 +280,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ro,
 			);
 			mainGroup = DE96379A25A72F72009A48E1;
 			productRefGroup = DE9637A425A72F72009A48E1 /* Products */;
@@ -292,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE88B23725AC81D000EEE4AB /* Localizable.strings in Resources */,
 				DE9637AE25A72F73009A48E1 /* Preview Assets.xcassets in Resources */,
 				DE9637B725A72FB7009A48E1 /* .gitignore in Resources */,
 				DE0495B125A8762A00E8EAD8 /* ding.wav in Resources */,
@@ -328,6 +334,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE88B23925AC81D000EEE4AB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE88B23825AC81D000EEE4AB /* en */,
+				DE88B23B25AC81D100EEE4AB /* ro */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DE9637B025A72F73009A48E1 /* Debug */ = {

@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct swiftui_scrumdingerApp: App {
     @ObservedObject private var data = ScrumData()
+    @Environment(\.scenePhase) private var scenePhase
     
     var body: some Scene {
         WindowGroup {
@@ -21,6 +22,11 @@ struct swiftui_scrumdingerApp: App {
             .onAppear {
                 data.load()
             }
+            .onChange(of: scenePhase, perform: { phase in
+                if phase == .background {
+                    data.save()
+                }
+            })
         }
     }
 }
