@@ -23,6 +23,9 @@ struct ScrumsView: View {
                 }
                 .listRowBackground(scrum.color)
             }
+            .onDelete(perform: { indexSet in
+                scrums.remove(atOffsets: indexSet)
+            })
         }
         .navigationTitle("Daily Scrums")
         .navigationBarItems(trailing: Button(action: {
